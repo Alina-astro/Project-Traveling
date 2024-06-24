@@ -1,1 +1,114 @@
 /*# sourceMappingURL=style.css.map */
+body {
+  background-color: rgba(255, 209, 177, 1);
+  color: rgba(74, 80, 104, 1); /* Цвет текста */
+  font-family: "Play", sans-serif; /* Шрифт текста */
+  font-size: 30px; /* Размер шрифта */
+}
+.header {
+  background-image: url("/assets/images/img_header_romantic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 1920px;
+  height: 810px;
+  margin-top: 0px;
+}
+
+h1 {
+  display: grid;
+  text-align: left;
+  margin-left: 250px;
+  font-family: "Yeon Sung", sans-serif;
+  font-size: 60px;
+}
+h2 {
+  display: grid;
+  text-align: center;
+  font-size: 60px;
+}
+.api {
+  color: rgba(25, 46, 130, 1); /* Цвет текста */
+  font-family: "Play", sans-serif; /* Шрифт текста */
+  font-weight: bold; /* Пример дополнительного стиля */
+  font-size: 30px; /* Размер шрифта */
+}
+.grid-container {
+  display: grid;
+  background-image: url("/assets/images/vector_1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  grid-template-rows: repeat(2, 1fr); /* 4 строки с равной высотой */
+  grid-template-columns: repeat(3, 1fr); /* 3 колонки с равной шириной */
+  gap: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 1920px;
+  height: 5000px;
+}
+.circle {
+  background-image: url("/assets/images/ellipse_1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 25%;
+}
+.content {
+  justify-content: center;
+  text-align: center;
+  margin: 20%;
+}
+
+.body1 {
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.circleC {
+  width: 25%;
+  height: 50%;
+  background-color: rgba(255, 217, 190, 1);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  position: absolute;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.line {
+  fill: none;
+  stroke: rgba(74, 80, 104, 0.22);
+  stroke-width: 2;
+  stroke-dasharray: 5, 5;
+  animation: dash 4s linear infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 10;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* Медиа-запрос для уменьшения количества колонок на маленьких экранах */
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Медиа-запрос для изменения на одну колонку на экранах очень маленького размера */
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
