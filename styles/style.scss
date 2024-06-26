@@ -23,15 +23,17 @@ body {
     padding: 20px;
     background-image: url(../assets/images/cards/img_header_main.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: top;
-    @media all and (min-width: 1200px) and (max-width: 1511px) {
-      height: 80vh;
-      padding: 12px;
-    }
+    // @media all and (min-width: 1450px) and (max-width: 1511px) {
+    //   height: 80vh;
+    //   padding: 12px;
+    //   background-size: contain;
+    // }
     @media all and (min-width: 701px) and (max-width: 1199px) {
       height: 44vh;
       padding: 12px;
+      background-size: contain;
     }
     @media all and (min-width: 280px) and (max-width: 700px) {
       height: 60vw;
@@ -130,10 +132,10 @@ body {
           height: 50vh;
           border-radius: 14px;
           overflow: hidden;
-          @media all and (min-width: 1200px) and (max-width: 1512px) {
-            width: 18vw;
-            height: 40vh;
-          }
+          // @media all and (min-width: 1200px) and (max-width: 1512px) {
+          //   width: 17vw;
+          //   height: 40vh;
+          // }
           @media all and (min-width: 601px) and (max-width: 1199px) {
             flex-basis: 45%;
             margin-bottom: 30px;
@@ -155,9 +157,13 @@ body {
             width: 96%;
             text-align: center;
             font-size: 26px;
-            @media all and (min-width: 1200px) and (max-width: 1439px) {
+            @media all and (min-width: 1301px) and (max-width: 1440px) {
               width: 80%;
               font-size: 20px;
+            }
+            @media all and (min-width: 601px) and (max-width: 1300px) {
+              width: 90%;
+              font-size: 18px;
             }
             @media all and (min-width: 280px) and (max-width: 600px) {
               width: 90%;
@@ -178,11 +184,13 @@ body {
       color: #ffffff;
       background-color: #bcc2cf;
       .video-wrap {
-        margin: 10vh auto;
         text-align: center;
         iframe {
           width: 60vw;
-          height: 50vh;
+          aspect-ratio: 2/1;
+          @media all and (min-width: 280px) and (max-width: 900px) {
+            width: 90vw;
+          }
         }
       }
     }
@@ -196,11 +204,22 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @media all and (min-width: 280px) and (max-width: 1000px) {
+        flex-direction: column;
+        gap: 20px;
+      }
       .footer__email {
         font-size: 30px;
+        @media all and (min-width: 280px) and (max-width: 1440px) {
+          font-size: 16px;
+          text-align: center;
+        }
       }
       .footer__copyright {
         font-size: 20px;
+        @media all and (min-width: 280px) and (max-width: 1200px) {
+          font-size: 14px;
+        }
       }
     }
   }

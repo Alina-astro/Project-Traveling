@@ -24,19 +24,14 @@ body header {
   padding: 20px;
   background-image: url(../assets/images/cards/img_header_main.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: top;
-}
-@media all and (min-width: 1200px) and (max-width: 1511px) {
-  body header {
-    height: 80vh;
-    padding: 12px;
-  }
 }
 @media all and (min-width: 701px) and (max-width: 1199px) {
   body header {
     height: 44vh;
     padding: 12px;
+    background-size: contain;
   }
 }
 @media all and (min-width: 280px) and (max-width: 700px) {
@@ -157,12 +152,6 @@ body main .container .container__cards .card-wrap {
   border-radius: 14px;
   overflow: hidden;
 }
-@media all and (min-width: 1200px) and (max-width: 1512px) {
-  body main .container .container__cards .card-wrap {
-    width: 18vw;
-    height: 40vh;
-  }
-}
 @media all and (min-width: 601px) and (max-width: 1199px) {
   body main .container .container__cards .card-wrap {
     flex-basis: 45%;
@@ -189,10 +178,16 @@ body main .container .container__cards .card-wrap .card__title {
   text-align: center;
   font-size: 26px;
 }
-@media all and (min-width: 1200px) and (max-width: 1439px) {
+@media all and (min-width: 1301px) and (max-width: 1440px) {
   body main .container .container__cards .card-wrap .card__title {
     width: 80%;
     font-size: 20px;
+  }
+}
+@media all and (min-width: 601px) and (max-width: 1300px) {
+  body main .container .container__cards .card-wrap .card__title {
+    width: 90%;
+    font-size: 18px;
   }
 }
 @media all and (min-width: 280px) and (max-width: 600px) {
@@ -213,12 +208,16 @@ body main .box-video {
   background-color: #bcc2cf;
 }
 body main .box-video .video-wrap {
-  margin: 10vh auto;
   text-align: center;
 }
 body main .box-video .video-wrap iframe {
   width: 60vw;
-  height: 50vh;
+  aspect-ratio: 2/1;
+}
+@media all and (min-width: 280px) and (max-width: 900px) {
+  body main .box-video .video-wrap iframe {
+    width: 90vw;
+  }
 }
 body footer {
   font-family: "Font-main";
@@ -231,9 +230,26 @@ body footer .footer-wrap {
   justify-content: space-between;
   align-items: center;
 }
+@media all and (min-width: 280px) and (max-width: 1000px) {
+  body footer .footer-wrap {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 body footer .footer-wrap .footer__email {
   font-size: 30px;
 }
+@media all and (min-width: 280px) and (max-width: 1440px) {
+  body footer .footer-wrap .footer__email {
+    font-size: 16px;
+    text-align: center;
+  }
+}
 body footer .footer-wrap .footer__copyright {
   font-size: 20px;
+}
+@media all and (min-width: 280px) and (max-width: 1200px) {
+  body footer .footer-wrap .footer__copyright {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=style.css.map */
