@@ -1,43 +1,71 @@
 @font-face {
   font-family: "Font-slogan";
-  src: url(../assets/fonts/Volkhov-Bold.ttf);
+  src: url(../assets/fonts/Volkhov-Regular.ttf);
 }
 @font-face {
   font-family: "Font-main";
   src: url(../assets/fonts/Play-Regular.ttf);
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
+  background-color: #bcc2cf;
   header {
+    margin: 0 auto;
     max-width: 1920px;
     min-width: 280px;
     width: 100vw;
     height: 100vh;
-    padding: 50px 5%;
+    padding: 20px;
     background-image: url(../assets/images/cards/img_header_main.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: top;
+    @media all and (min-width: 1200px) and (max-width: 1511px) {
+      height: 80vh;
+      padding: 12px;
+    }
+    @media all and (min-width: 701px) and (max-width: 1199px) {
+      height: 44vh;
+      padding: 12px;
+    }
+    @media all and (min-width: 280px) and (max-width: 700px) {
+      height: 60vw;
+      padding: 8px;
+    }
     .header-wrap {
       display: flex;
       justify-content: space-between;
-      align-items: flex-end;
+      align-items: center;
       .logo {
         width: 15%;
         img {
           width: 100%;
         }
       }
-      .main-title {
-        text-align: end;
+      h1 {
+        text-align: center;
         font-family: "Font-slogan";
-        font-size: 30px;
+        font-size: 50px;
         width: 80%;
-        @media all and (min-width: 600px) and (max-width: 1700px) {
+        @media all and (min-width: 1024px) and (max-width: 1600px) {
+          font-size: 40px;
+        }
+        @media all and (min-width: 768px) and (max-width: 1023px) {
+          font-size: 30px;
+          width: 60%;
+        }
+        @media all and (min-width: 431px) and (max-width: 767px) {
           font-size: 20px;
+          width: 70%;
+        }
+        @media all and (min-width: 280px) and (max-width: 430px) {
+          font-size: 12px;
+          width: 75%;
         }
       }
     }
@@ -49,7 +77,6 @@ body {
       background-color: #bcc2cf;
       .card-wrap {
         background-color: #e9d3bb;
-
         .card__title {
           margin: 10px auto;
         }
@@ -70,37 +97,71 @@ body {
       display: flex;
       flex-direction: column;
       gap: 80px;
+      @media all and (min-width: 280px) and (max-width: 1023px) {
+        padding: 30px 5%;
+        gap: 40px;
+      }
       h2 {
         font-size: 50px;
         text-align: center;
+        @media all and (min-width: 501px) and (max-width: 1023px) {
+          font-size: 30px;
+        }
+        @media all and (min-width: 280px) and (max-width: 500px) {
+          font-size: 20px;
+        }
       }
       .container__text {
         font-size: 26px;
         line-height: 138%;
         text-align: justify;
+        @media all and (min-width: 280px) and (max-width: 700px) {
+          font-size: 16px;
+          line-height: 110%;
+        }
       }
       .container__cards {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         .card-wrap {
           width: 16vw;
           height: 50vh;
           border-radius: 14px;
           overflow: hidden;
-          .card__img {
+          @media all and (min-width: 1200px) and (max-width: 1512px) {
+            width: 18vw;
             height: 40vh;
+          }
+          @media all and (min-width: 601px) and (max-width: 1199px) {
+            flex-basis: 45%;
+            margin-bottom: 30px;
+            height: 36vh;
+          }
+          @media all and (min-width: 280px) and (max-width: 600px) {
+            flex-basis: 48%;
+            margin-bottom: 30px;
+            height: 30vh;
+          }
+          .card__img {
+            height: 80%;
             img {
               width: 100%;
               height: 100%;
             }
           }
           .card__title {
-            width: 80%;
+            width: 96%;
             text-align: center;
             font-size: 26px;
-            @media all and (min-width: 600px) and (max-width: 1440px) {
+            @media all and (min-width: 1200px) and (max-width: 1439px) {
+              width: 80%;
               font-size: 20px;
+            }
+            @media all and (min-width: 280px) and (max-width: 600px) {
+              width: 90%;
+              font-size: 12px;
             }
             a {
               color: #1e1e1e;
@@ -114,19 +175,14 @@ body {
       }
     }
     .box-video {
-      padding: 80px 12%;
       color: #ffffff;
       background-color: #bcc2cf;
-      h2 {
-        font-size: 50px;
-        text-align: center;
-      }
       .video-wrap {
         margin: 10vh auto;
         text-align: center;
         iframe {
-          width: 40vw;
-          height: 40vh;
+          width: 60vw;
+          height: 50vh;
         }
       }
     }
