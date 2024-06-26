@@ -1,17 +1,20 @@
 @font-face {
   font-family: "Play";
-  src: url(../assets/fonts/Play-Regular.ttf);
+  src: url("../../assets/fonts/Play-Regular.ttf");
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 20px;
 }
-
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
 .header {
   max-width: 1920px;
   min-width: 280px;
   width: 100vw;
   height: 100vh;
-  background-image: url("../assets/images/img_header_intellectual.jpg");
+  background-image: url("../../assets/images/img_header_intellectual.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -35,7 +38,7 @@ main {
   color: rgb(74, 80, 104);
   text-align: center;
   font-family: "Play", sans-serif;
-  margin-top: 2%;
+  margin-top: 2vh;
 }
 .main__point {
   width: 380px;
@@ -63,6 +66,24 @@ main {
 .span {
   font-weight: bold;
   color: rgb(25, 46, 130);
+}
+
+body footer {
+  font-family: "Play", sans-serif;
+  color: white;
+  background-color: rgb(74, 80, 104);
+}
+body footer .footer-wrap {
+  padding: 5vh 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body footer .footer-wrap .footer__email {
+  font-size: 30px;
+}
+body footer .footer-wrap .footer__copyright {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
