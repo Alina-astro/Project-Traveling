@@ -1,114 +1,169 @@
-/*# sourceMappingURL=style.css.map */
-body {
-  background-color: rgba(255, 209, 177, 1);
-  color: rgba(74, 80, 104, 1); /* Цвет текста */
-  font-family: "Play", sans-serif; /* Шрифт текста */
-  font-size: 30px; /* Размер шрифта */
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.header {
+
+body {
+  background-color: rgb(255, 209, 177);
+}
+
+.header_romantic {
+  margin: 0 auto;
+  width: 100%;
+  height: 600px;
   background-image: url("/assets/images/img_header_romantic.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  width: 1920px;
-  height: 810px;
-  margin-top: 0px;
+  background-position: center;
+  margin-bottom: 50px;
+}
+.header_romantic .header_romantic_title {
+  max-width: 100px;
+  padding: 30px;
+  margin-left: 150px;
+  font-size: 60px;
+  font-family: "Yeon Sung", system-ui;
+  color: rgb(195, 161, 127);
+}
+
+.grid_container_romantic {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 240px;
+  gap: 20px;
+  width: 100%;
+  justify-items: center;
+  position: relative;
+  background-image: url("/assets/images/vector_1.svg");
+  background-repeat: no-repeat;
+  background-size: auto 95%;
+  background-position: center;
+}
+.grid_container_romantic #circle_romantic1 {
+  grid-column: 1/2;
+  grid-row: 1;
+}
+.grid_container_romantic #circle_romantic2 {
+  grid-column: 2/3;
+  grid-row: 2;
+}
+.grid_container_romantic #circle_romantic3 {
+  grid-column: 1/2;
+  grid-row: 3;
+}
+.grid_container_romantic #circle_romantic4 {
+  grid-column: 2/3;
+  grid-row: 4;
+}
+.grid_container_romantic #circle_romantic5 {
+  grid-column: 1/2;
+  grid-row: 5;
+}
+.grid_container_romantic #circle_romantic6 {
+  grid-column: 2/3;
+  grid-row: 6;
+}
+.grid_container_romantic #circle_romantic7 {
+  grid-column: 1/2;
+  grid-row: 7;
+}
+.grid_container_romantic #circle_romantic8 {
+  grid-column: 2/3;
+  grid-row: 8;
+}
+.grid_container_romantic #circle_romantic9 {
+  grid-column: 1/2;
+  grid-row: 9;
+}
+.grid_container_romantic #circle_romantic10 {
+  grid-column: 2/3;
+  grid-row: 10;
+}
+.grid_container_romantic .circle_romantic {
+  width: 400px;
+  height: 400px;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #4a5068;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 1rem;
+  margin-bottom: 50px;
+  position: relative;
+}
+.grid_container_romantic .circle_romantic .content_romantic {
+  padding: 10px;
+  margin: 0;
+  font-family: "Play", sans-serif;
+}
+.grid_container_romantic .circle_romantic .romantic_icon {
+  max-width: 20%;
+  max-height: 15%;
+}
+.grid_container_romantic .circle_romantic span {
+  color: #192e82;
+  font-weight: bold;
 }
 
 h1 {
-  display: grid;
-  text-align: left;
-  margin-left: 250px;
-  font-family: "Yeon Sung", sans-serif;
-  font-size: 60px;
-}
-h2 {
-  display: grid;
+  color: #4a5068;
   text-align: center;
-  font-size: 60px;
-}
-.api {
-  color: rgba(25, 46, 130, 1); /* Цвет текста */
-  font-family: "Play", sans-serif; /* Шрифт текста */
-  font-weight: bold; /* Пример дополнительного стиля */
-  font-size: 30px; /* Размер шрифта */
-}
-.grid-container {
-  display: grid;
-  background-image: url("/assets/images/vector_1.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  grid-template-rows: repeat(2, 1fr); /* 4 строки с равной высотой */
-  grid-template-columns: repeat(3, 1fr); /* 3 колонки с равной шириной */
-  gap: 10px;
-  margin-left: 50px;
-  margin-right: 50px;
-  width: 1920px;
-  height: 5000px;
-}
-.circle {
-  background-image: url("/assets/images/ellipse_1.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 25%;
-}
-.content {
-  justify-content: center;
-  text-align: center;
-  margin: 20%;
+  margin-bottom: 50px;
+  font-family: "Play", sans-serif;
+  font-weight: lighter;
 }
 
-.body1 {
+.desription_romantic {
+  color: #4a5068;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: 9%;
+  margin-right: 9%;
+  font-family: "Play", sans-serif;
+  padding: 50px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 150px;
+  gap: 20px;
+  width: 100%;
+  justify-items: center;
   position: relative;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
+  color: #4a5068;
+  text-align: center;
+  margin-top: 150px;
+  font-family: "Play", sans-serif;
+  font-weight: lighter;
 }
-
-.circleC {
-  width: 25%;
-  height: 50%;
-  background-color: rgba(255, 217, 190, 1);
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-  position: absolute;
+footer .footer_romantic {
+  grid-column: 1/3;
+  grid-row: 1;
 }
-
-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
+footer .email_romantic {
+  grid-column: 1/2;
+  grid-row: 2;
 }
-
-.line {
-  fill: none;
-  stroke: rgba(74, 80, 104, 0.22);
-  stroke-width: 2;
-  stroke-dasharray: 5, 5;
-  animation: dash 4s linear infinite;
-}
-
-@keyframes dash {
-  from {
-    stroke-dashoffset: 0;
-  }
-  to {
-    stroke-dashoffset: 10;
-  }
+footer .year_romantic {
+  grid-column: 2/3;
+  grid-row: 2;
 }
 
 @media screen and (max-width: 1024px) {
-  /* Медиа-запрос для уменьшения количества колонок на маленьких экранах */
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
+  /* Медиа-запрос для удаления вектора на маленьких экранах */
+  .grid_container_romantic {
+    background-image: none;
   }
-}
-
-@media screen and (max-width: 768px) {
-  /* Медиа-запрос для изменения на одну колонку на экранах очень маленького размера */
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-}
+}/*# sourceMappingURL=style.css.map */
