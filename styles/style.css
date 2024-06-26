@@ -1,1 +1,153 @@
-/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "Font-slogan";
+  src: url(../assets/fonts/Volkhov-Bold.ttf);
+}
+@font-face {
+  font-family: "Font-main";
+  src: url(../assets/fonts/Play-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body header {
+  max-width: 1920px;
+  min-width: 280px;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px 5%;
+  background-image: url(../assets/images/cards/img_header_main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body header .header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+body header .header-wrap .logo {
+  width: 15%;
+}
+body header .header-wrap .logo img {
+  width: 100%;
+}
+body header .header-wrap .main-title {
+  text-align: end;
+  font-family: "Font-slogan";
+  font-size: 30px;
+  width: 80%;
+}
+@media all and (min-width: 600px) and (max-width: 1700px) {
+  body header .header-wrap .main-title {
+    font-size: 20px;
+  }
+}
+body main {
+  font-family: "Font-main";
+}
+body main .block-route {
+  color: #ffffff;
+  background-color: #bcc2cf;
+}
+body main .block-route .card-wrap {
+  background-color: #e9d3bb;
+}
+body main .block-route .card-wrap .card__title {
+  margin: 10px auto;
+}
+body main .block-guide {
+  color: #4a5068;
+  background-color: #ffd9b2;
+}
+body main .block-guide .card-wrap {
+  background-color: #bcc2cf;
+}
+body main .block-guide .card-wrap .card__title {
+  margin: 5px auto;
+}
+body main .container {
+  padding: 80px 12%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+body main .container h2 {
+  font-size: 50px;
+  text-align: center;
+}
+body main .container .container__text {
+  font-size: 26px;
+  line-height: 138%;
+  text-align: justify;
+}
+body main .container .container__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .container .container__cards .card-wrap {
+  width: 16vw;
+  height: 50vh;
+  border-radius: 14px;
+  overflow: hidden;
+}
+body main .container .container__cards .card-wrap .card__img {
+  height: 40vh;
+}
+body main .container .container__cards .card-wrap .card__img img {
+  width: 100%;
+  height: 100%;
+}
+body main .container .container__cards .card-wrap .card__title {
+  width: 80%;
+  text-align: center;
+  font-size: 26px;
+}
+@media all and (min-width: 600px) and (max-width: 1440px) {
+  body main .container .container__cards .card-wrap .card__title {
+    font-size: 20px;
+  }
+}
+body main .container .container__cards .card-wrap .card__title a {
+  color: #1e1e1e;
+  text-decoration: none;
+}
+body main .container .container__cards .card-wrap .card__title .card__price {
+  font-weight: bolder;
+}
+body main .box-video {
+  padding: 80px 12%;
+  color: #ffffff;
+  background-color: #bcc2cf;
+}
+body main .box-video h2 {
+  font-size: 50px;
+  text-align: center;
+}
+body main .box-video .video-wrap {
+  margin: 10vh auto;
+  text-align: center;
+}
+body main .box-video .video-wrap iframe {
+  width: 40vw;
+  height: 40vh;
+}
+body footer {
+  font-family: "Font-main";
+  color: #ffffff;
+  background-color: #ffd9b2;
+}
+body footer .footer-wrap {
+  padding: 5vh 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body footer .footer-wrap .footer__email {
+  font-size: 30px;
+}
+body footer .footer-wrap .footer__copyright {
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */
