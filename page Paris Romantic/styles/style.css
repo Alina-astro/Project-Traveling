@@ -1,4 +1,4 @@
-
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -7,24 +7,23 @@
 
 body {
   background-color: rgb(255, 209, 177);
+  font-family: "Play";
+  src: url("../../assets/fonts/Play-Regular.ttf");
 }
 
 .header_romantic {
   margin: 0 auto;
   width: 100%;
-  height: 600px;
+  height: 800px;
   background-image: url("/assets/images/img_header_romantic.jpg");
   background-size: cover;
   background-position: center;
   margin-bottom: 50px;
 }
-.header_romantic .header_romantic_title {
-  max-width: 100px;
-  padding: 30px;
-  margin-left: 150px;
-  font-size: 60px;
-  font-family: "Yeon Sung", system-ui;
-  color: rgb(195, 161, 127);
+.header_romantic .header_romantic_logo {
+  max-width: 10%;
+  padding: 15px;
+  margin-top: 5%;
 }
 
 .grid_container_romantic {
@@ -142,7 +141,7 @@ footer {
   position: relative;
   color: #4a5068;
   text-align: center;
-  margin-top: 150px;
+  margin-top: 200px;
   font-family: "Play", sans-serif;
   font-weight: lighter;
 }
@@ -162,6 +161,48 @@ footer .year_romantic {
 @media screen and (max-width: 1024px) {
   /* Медиа-запрос для удаления вектора на маленьких экранах */
   .grid_container_romantic {
+    grid-template-columns: repeat(1, 1fr);
     background-image: none;
+    grid-auto-rows: 400px;
+  }
+  .grid_container_romantic #circle_romantic1 {
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+  .grid_container_romantic #circle_romantic2 {
+    grid-column: 1/2;
+    grid-row: 2;
+  }
+  .grid_container_romantic #circle_romantic3 {
+    grid-column: 1/2;
+    grid-row: 3;
+  }
+  .grid_container_romantic #circle_romantic4 {
+    grid-column: 1/2;
+    grid-row: 4;
+  }
+  .grid_container_romantic #circle_romantic5 {
+    grid-column: 1/2;
+    grid-row: 5;
+  }
+  .grid_container_romantic #circle_romantic6 {
+    grid-column: 1/2;
+    grid-row: 6;
+  }
+  .grid_container_romantic #circle_romantic7 {
+    grid-column: 1/2;
+    grid-row: 7;
+  }
+  .grid_container_romantic #circle_romantic8 {
+    grid-column: 1/2;
+    grid-row: 8;
+  }
+  .grid_container_romantic #circle_romantic9 {
+    grid-column: 1/2;
+    grid-row: 9;
+  }
+  .grid_container_romantic #circle_romantic10 {
+    grid-column: 1/2;
+    grid-row: 10;
   }
 }/*# sourceMappingURL=style.css.map */
