@@ -1,15 +1,1 @@
 /*# sourceMappingURL=style.css.map */
-@font-face {
-    font-family: "Play";
-    src: url("../../assets/fonts/Play-Regular.ttf");
-}
-
-.header__bohemian {
-    max-width: 1920px;
-    max-height: 952px;
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../../assets/images/img_header_bohemian.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
