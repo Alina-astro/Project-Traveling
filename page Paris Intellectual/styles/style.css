@@ -10,7 +10,6 @@ a {
   color: #ffffff;
 }
 .header {
-  max-width: 1920px;
   min-width: 280px;
   width: 100vw;
   height: 100vh;
@@ -24,6 +23,7 @@ a {
 }
 .header__description {
   position: absolute;
+  width: 15%;
   top: 5%;
   left: 5%;
 }
@@ -34,6 +34,9 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  background-image: url("../../assets/images/vector_1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .main__title {
   color: rgb(74, 80, 104);
