@@ -1,5 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+@font-face {
+  font-family: "Play";
+  src: url("../../assets/fonts/Play-Regular.ttf");
+}
 
 * {
   margin: 0;
@@ -8,163 +10,222 @@
 }
 body {
   background-color: rgba(255, 209, 177, 1);
-}
-.header_romantic {
-  margin: 0 auto;
-  width: 100%;
-  height: 600px;
-  background-image: url("/assets/images/img_header_romantic.jpg");
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 50px;
 
-  .header_romantic_title {
-    max-width: 100px;
-    padding: 30px;
-    margin-left: 150px;
-    font-size: 60px;
-    font-family: "Yeon Sung", system-ui;
-    color: rgba(195, 161, 127, 1);
-  }
-}
-.grid_container_romantic {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 240px;
-  gap: 20px;
-  width: 100%;
-  justify-items: center;
-  position: relative;
-  background-image: url("/assets/images/vector_1.svg");
-  background-repeat: no-repeat;
-  background-size: auto 95%;
-  background-position: center;
-
-  #circle_romantic1 {
-    grid-column: 1 / 2;
-    grid-row: 1;
-  }
-
-  #circle_romantic2 {
-    grid-column: 2 / 3;
-    grid-row: 2;
-  }
-
-  #circle_romantic3 {
-    grid-column: 1 / 2;
-    grid-row: 3;
-  }
-
-  #circle_romantic4 {
-    grid-column: 2 / 3;
-    grid-row: 4;
-  }
-
-  #circle_romantic5 {
-    grid-column: 1 / 2;
-    grid-row: 5;
-  }
-
-  #circle_romantic6 {
-    grid-column: 2 / 3;
-    grid-row: 6;
-  }
-
-  #circle_romantic7 {
-    grid-column: 1 / 2;
-    grid-row: 7;
-  }
-
-  #circle_romantic8 {
-    grid-column: 2 / 3;
-    grid-row: 8;
-  }
-
-  #circle_romantic9 {
-    grid-column: 1 / 2;
-    grid-row: 9;
-  }
-  #circle_romantic10 {
-    grid-column: 2 / 3;
-    grid-row: 10;
-  }
-  .circle_romantic {
-    width: 400px;
-    height: 400px;
-    padding: 50px;
-    margin: 20px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    color: #4a5068;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+  header {
     margin: 0 auto;
-    gap: 1rem;
+    width: 100%;
+    height: 800px;
+    background-image: url("../../assets/images/img_header_romantic.jpg");
+    background-size: cover;
+    background-position: center;
     margin-bottom: 50px;
-    position: relative;
 
-    .content_romantic {
-      padding: 10px;
-      margin: 0;
+    .header_romantic_logo {
+      max-width: 10%;
+      padding: 15px;
+      margin-top: 5%;
+    }
+  }
+
+  main {
+    h1 {
+      color: #4a5068;
+      text-align: center;
+      margin-bottom: 50px;
       font-family: "Play", sans-serif;
+      font-weight: lighter;
     }
-    .romantic_icon {
-      max-width: 20%;
-      max-height: 15%;
+    .desription_romantic {
+      color: #4a5068;
+      text-align: center;
+      margin-bottom: 50px;
+      margin-left: 9%;
+      margin-right: 9%;
+      font-family: "Play", sans-serif;
+      padding: 50px;
     }
-    span {
-      color: #192e82;
+    .grid_container_romantic {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 240px;
+      gap: 20px;
+      width: 100%;
+      justify-items: center;
+      position: relative;
+      background-image: url("../../assets/images/vector_1.svg");
+      background-repeat: no-repeat;
+      background-size: auto 90%;
+      background-position: center;
+
+      #circle_romantic1 {
+        grid-column: 1 / 2;
+        grid-row: 1;
+      }
+
+      #circle_romantic2 {
+        grid-column: 2 / 3;
+        grid-row: 2;
+      }
+
+      #circle_romantic3 {
+        grid-column: 1 / 2;
+        grid-row: 3;
+      }
+
+      #circle_romantic4 {
+        grid-column: 2 / 3;
+        grid-row: 4;
+      }
+
+      #circle_romantic5 {
+        grid-column: 1 / 2;
+        grid-row: 5;
+      }
+
+      #circle_romantic6 {
+        grid-column: 2 / 3;
+        grid-row: 6;
+      }
+
+      #circle_romantic7 {
+        grid-column: 1 / 2;
+        grid-row: 7;
+      }
+
+      #circle_romantic8 {
+        grid-column: 2 / 3;
+        grid-row: 8;
+      }
+
+      #circle_romantic9 {
+        grid-column: 1 / 2;
+        grid-row: 9;
+      }
+      #circle_romantic10 {
+        grid-column: 2 / 3;
+        grid-row: 10;
+      }
+      .circle_romantic {
+        width: 400px;
+        height: 400px;
+        padding: 50px;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        color: #4a5068;
+        text-align: center;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 1rem;
+        position: relative;
+
+        .content_romantic {
+          padding: 10px;
+          margin: 0;
+          font-family: "Play", sans-serif;
+
+          .api_romantic {
+            cursor: pointer;
+            color: #192e82;
+            font-weight: bold;
+            text-decoration: underline;
+            transition: transform 0.3s ease, color 0.3s ease;
+
+            &:hover {
+              color: rgb(1, 1, 71);
+              transform: scale(1.2);
+              cursor: pointer;
+            }
+          }
+        }
+        .romantic_icon {
+          max-width: 20%;
+          max-height: 15%;
+        }
+      }
+    }
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .popup-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
       font-weight: bold;
     }
-  }
-}
-h1 {
-  color: #4a5068;
-  text-align: center;
-  margin-bottom: 50px;
-  font-family: "Play", sans-serif;
-  font-weight: lighter;
-}
-.desription_romantic {
-  color: #4a5068;
-  text-align: center;
-  margin-bottom: 50px;
-  margin-left: 9%;
-  margin-right: 9%;
-  font-family: "Play", sans-serif;
-  padding: 50px;
-}
-footer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 150px;
-  gap: 20px;
-  width: 100%;
-  justify-items: center;
-  position: relative;
-  color: #4a5068;
-  text-align: center;
-  margin-top: 150px;
-  font-family: "Play", sans-serif;
-  font-weight: lighter;
 
-  .footer_romantic {
-    grid-column: 1 / 3;
-    grid-row: 1;
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
   }
 
-  .email_romantic {
-    grid-column: 1 / 2;
-    grid-row: 2;
-  }
-  .year_romantic {
-    grid-column: 2 / 3;
-    grid-row: 2;
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 150px;
+    gap: 20px;
+    width: 100%;
+    justify-items: center;
+    position: relative;
+    color: #4a5068;
+    text-align: center;
+    margin-top: 200px;
+    font-family: "Play", sans-serif;
+    font-weight: lighter;
+
+    h1 {
+      color: #4a5068;
+      text-align: center;
+      margin-bottom: 50px;
+      font-family: "Play", sans-serif;
+      font-weight: lighter;
+    }
+
+    .footer_romantic {
+      grid-column: 1 / 3;
+      grid-row: 1;
+    }
+
+
+    .email_romantic {
+      grid-column: 1 / 2;
+      grid-row: 2;
+    }
+    .year_romantic {
+      grid-column: 2 / 3;
+      grid-row: 2;
+    }
   }
 }
 @media screen and (max-width: 1024px) {
