@@ -5,11 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Средневековый Париж</title>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3E3zXfUw9MB5-I8yz5Q5tYfh772BMqhw&callback=initMap"
+      async
+      defer
+    ></script>
+    <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/icon_paris.png"
+      type="image/png"
+    />
   </head>
   <body>
     <header class="header__medieval">
-      <p class="header__medieval__title">Guide Parisien</p>
+      <a href="http://127.0.0.1:5500/index.html" target="_blank">
+        <img
+          class="header__medieval__icon"
+          src="../assets/icons/Logo_white.png"
+          alt="header__icon"
+        />
+      </a>
     </header>
     <main class="main__medieval">
       <h1 class="title__medieval">Средневековый Париж</h1>
@@ -22,12 +39,18 @@
       <div class="main__medieval__container">
         <img
           class="main__medieval__vector"
-          src="/assets/images/medieval/Vector 1(1).png"
+          src="../assets/images/medieval/Vector 1(1).png"
           alt="vector"
         />
 
-        <div id="main__way1_medieval" class="main__way_medieval">
-          <p class="main__way_medieval__titile">
+        <div
+          id="main__way1_medieval"
+          class="main__way_medieval"
+          data-coords="48.8566,2.3522"
+          data-name="Отель-де-Виль"
+          data-info="Ратуша, в которой с 1357 года размещаются парижские муниципальные органы власти."
+        >
+          <p class="main__way_medieval__text">
             Наш маршрут по Средневековому Парижу начинается на станции метро
             <span> Hôtel de Ville</span>, где перед нами открывается
             <span> Отель-де-Виль </span>, ратуша, в которой с 1357 года
@@ -35,12 +58,18 @@
           </p>
           <img
             class="main__way_medieval__icon"
-            src="/assets/icons/icon_location.svg"
+            src="../assets/icons/icon_location.svg"
             alt="icon__medieval"
           />
         </div>
-        <div id="main__way2_medieval" class="main__way_medieval">
-          <p class="main__way_medieval__titile">
+        <div
+          id="main__way2_medieval"
+          class="main__way_medieval"
+          data-coords="48.8579,2.3590"
+          data-name="Церковь Сен-Жерве"
+          data-info="Готическая церковь, построенная в 1494 году, известная своими органистами."
+        >
+          <p class="main__way_medieval__text">
             Обойдя вокруг ратуши и повернув на пл. Сен-Жерве мы увидим
             готическую
             <span> церковь Сен-Жерве </span>, построенную в 1494 году на месте
@@ -50,12 +79,18 @@
           </p>
           <img
             class="main__way_medieval__icon"
-            src="/assets/icons/icon_location.svg"
+            src="../assets/icons/icon_location.svg"
             alt="icon__medieval"
           />
         </div>
-        <div id="main__way3_medieval" class="main__way_medieval">
-          <p class="main__way_medieval__titile">
+        <div
+          id="main__way3_medieval"
+          class="main__way_medieval"
+          data-coords="48.8530,2.3499"
+          data-name="Нотр-Дам-де-Пари"
+          data-info="Собор XIII века со статуями гаргулий и парящими аркбутанами, ставший декорацией для романа Виктора Гюго."
+        >
+          <p class="main__way_medieval__text">
             Далее двигаемся вдоль набережной Отель-де-Виль и переходим Сену по
             Аркольскому мосту и попадаем на остров Сите, где расположен
             знаменитый
@@ -65,12 +100,18 @@
           </p>
           <img
             class="main__way_medieval__icon"
-            src="/assets/icons/icon_location.svg"
+            src="../assets/icons/icon_location.svg"
             alt="icon__medieval"
           />
         </div>
-        <div id="main__way4_medieval" class="main__way_medieval">
-          <p class="main__way_medieval__titile">
+        <div
+          id="main__way4_medieval"
+          class="main__way_medieval"
+          data-coords="48.8558,2.3455"
+          data-name="Часовня Сент-Шапель"
+          data-info="Часовня, возведенная Людовиком Святым в 1242–1248 годах, с наиболее полным ансамблем витражного искусства XIII века."
+        >
+          <p class="main__way_medieval__text">
             Продвигаемся вглубь острова и оказываемся перед
             <span> часовней Сент-Шапель</span>. Возведена Людовиком Святым в
             1242–1248 годы. Обладает наиболее полным ансамблем витражного
@@ -79,12 +120,18 @@
           </p>
           <img
             class="main__way_medieval__icon"
-            src="/assets/icons/icon_location.svg"
+            src="../assets/icons/icon_location.svg"
             alt="icon__medieval"
           />
         </div>
-        <div id="main__way5_medieval" class="main__way_medieval">
-          <p class="main__way_medieval__titile">
+        <div
+          id="main__way5_medieval"
+          class="main__way_medieval"
+          data-coords="48.8600,2.3452"
+          data-name="Замок Консьержери"
+          data-info="Замок, начиная свою историю с VI века, а с XIII века он теряет свою оборонительную функцию и становится парижской резиденцией короля. С 1391 года часть здания использовалась в качестве тюрьмы."
+        >
+          <p class="main__way_medieval__text">
             Справа от часовни открывается <span> замок Консьержери </span>. Его
             история начинается в VI в., а в XIII в. с ростом города он теряет
             свою оборонительную функцию и становится парижской резиденцией
@@ -93,12 +140,18 @@
           </p>
           <img
             class="main__way_medieval__icon"
-            src="/assets/icons/icon_location.svg"
+            src="../assets/icons/icon_location.svg"
             alt="icon__medieval"
           />
         </div>
-        <div id="main__way6_medieval" class="main__way_medieval">
-          <p class="main__way_medieval__titile">
+        <div
+          id="main__way6_medieval"
+          class="main__way_medieval"
+          data-coords="48.8534,2.3433"
+          data-name="Мост Сен-Мишель"
+          data-info="Мост, возведенный в 1378 году и перестроенный в 1857 году, который соединяет Левый берег и остров Сите."
+        >
+          <p class="main__way_medieval__text">
             Переходим <span> мост Сен-Мишель </span>(возведенный в 1378 году и
             перестроенный в 1857 году), далее по бульвару Сен-Мишель и
             останавливаемся в уютной французской пекарне
@@ -106,12 +159,18 @@
           </p>
           <img
             class="main__way_medieval__icon"
-            src="/assets/icons/icon_location.svg"
+            src="../assets/icons/icon_location.svg"
             alt="icon__medieval"
           />
         </div>
-        <div id="main__way7_medieval" class="main__way_medieval">
-          <p class="main__way_medieval__titile">
+        <div
+          id="main__way7_medieval"
+          class="main__way_medieval"
+          data-coords="48.8499,2.3444"
+          data-name="Музей Средневековья (Музей Клюни)"
+          data-info="Музей, в котором представлены экспонаты, охватывающие период Средневековья, Античности и Возрождения."
+        >
+          <p class="main__way_medieval__text">
             После небольшого отдыха продолжаем свой путь по бульвару Сен-Мишель
             и оказываемся у <span> Музея Средневековья (или Музей Клюни)</span>.
             Этот музей уникален тем, что 23 тысячи его экспонатов охватывают
@@ -120,12 +179,18 @@
           </p>
           <img
             class="main__way_medieval__icon"
-            src="/assets/icons/icon_location.svg"
+            src="../assets/icons/icon_location.svg"
             alt="icon__medieval"
           />
         </div>
-        <div id="main__way8_medieval" class="main__way_medieval">
-          <p class="main__way_medieval__titile">
+        <div
+          id="main__way8_medieval"
+          class="main__way_medieval"
+          data-coords="48.8494,2.3426"
+          data-name="Главный университет Парижа - Сорбонна / Церковь Сорбонны (Капелла Святой Урсулы Сорбонской)"
+          data-info="Университет, основанный в 1257 году, и церковь, сохранившая множество средневековых традиций и принципов."
+        >
+          <p class="main__way_medieval__text">
             Далее направляясь по улице Сорбонна можно рассмотреть
             <span> главный университет Парижа - Сорбонна</span>, впервые
             основанное в 1257 году, а при нём
@@ -135,12 +200,18 @@
           </p>
           <img
             class="main__way_medieval__icon"
-            src="/assets/icons/icon_location.svg"
+            src="../assets/icons/icon_location.svg"
             alt="icon__medieval"
           />
         </div>
-        <div id="main__way9_medieval" class="main__way_medieval">
-          <p class="main__way_medieval__titile">
+        <div
+          id="main__way9_medieval"
+          class="main__way_medieval"
+          data-coords="48.8467,2.3370"
+          data-name="Люксембургский сад / Люксембургский дворец"
+          data-info="Сад, основанный в 1611 году вокруг будущего Люксембургского дворца, построенного к 1631 году для Марии Медичи."
+        >
+          <p class="main__way_medieval__text">
             Двигаясь по улице Суфло до бульвара Сен-Мишель (с красивыми
             фасадами, магазинами и ресторанами), мы попадаем в
             <span> Люксембургский сад</span>. Он возник в 1611 г. вокруг
@@ -150,13 +221,31 @@
           </p>
           <img
             class="main__way_medieval__icon"
-            src="/assets/icons/icon_location.svg"
+            src="../assets/icons/icon_location.svg"
             alt="icon__medieval"
           />
         </div>
       </div>
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div id="map"></div>
+          <div id="place-info"></div>
+        </div>
+      </div>
+
+      <p class="main__wishes">Приятного отдыха!</p>
     </main>
 
+    <footer class="footer__medieval">
+      <div class="mediveval__wrap">
+        <div class="mediveval__wrap__mail">
+          guide-parisien@gmail.com - по всем вопросам и предложениям
+        </div>
+        <div class="mediveval__wrap_copyright">Guide Parisien © 2024</div>
+      </div>
+    </footer>
     <script src="./script.js"></script>
   </body>
 </html>
