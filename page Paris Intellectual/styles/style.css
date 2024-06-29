@@ -1,5 +1,32 @@
 .header {
   width: 100%;
+  height: 600px;
+  background-image: url("../../assets/images/img_header_intellectual.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.header__logo {
+  padding: 2%;
+  max-width: 100%;
+  height: 30%;
+}
+.header__img {
+  background-image: url("/assets/images/img_header_intellectual.jpg");
+  background-size: cover;
+}
+.main__title {
+  color: rgb(74, 80, 104);
+  text-align: center;
+  font-family: "Play", sans-serif;
+  margin-top: 0;
+  padding-top: 5%;
+}
+.main__point {
+  cursor: pointer;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  background: rgb(245, 220, 199);
   position: relative;
 }
 .header__description {
@@ -7,7 +34,17 @@
   top: 5%;
   left: 5%;
 }
-.header__img {
-  background-image: url("/assets/images/img_header_intellectual.jpg");
-  background-size: cover;
-}/*# sourceMappingURL=style.css.map */
+body footer .footer-wrap {
+  padding: 5vh 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body footer .footer-wrap .footer__email {
+  font-size: 30px;
+}
+body footer .footer-wrap .footer__copyright {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

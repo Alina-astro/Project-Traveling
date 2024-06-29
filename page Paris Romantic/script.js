@@ -4,24 +4,30 @@ document.addEventListener("DOMContentLoaded", function () {
     { id: "carette", name: "Carette, Paris" },
     { id: "place_trocadero", name: "Place du Trocadéro, Paris" },
     { id: "pont_iena", name: "Pont d'Iéna, Paris" },
-    { id: "rue_universite", name: "Rue de l'Université, Paris" },
+    { id: "rue_universite", name: "École élémentaire privée Fidès, Paris" },
     { id: "garden", name: "Champ de Mars, Paris" },
     { id: "mars", name: "Champ de Mars, Paris" },
     { id: "tour_eiffel", name: "Tour Eiffel, Paris" },
-    { id: "saint_dominique", name: "Rue Saint-Dominique, Paris" },
+    { id: "saint_dominique", name: "Pharmacie du Champs de Mars, Paris" },
     { id: "maison", name: "Hôtel des Invalides, Paris" },
     { id: "bridge", name: "Pont Alexandre III, Paris" },
     { id: "grand_pale", name: "Grand Palais, Paris" },
     { id: "place_concorde", name: "Place de la Concorde, Paris" },
     { id: "jardin", name: "Jardin des Tuileries, Paris" },
+    { id: "jardin_champs_elysees", name: "Jardin des Champs-Elysées, Paris" },
+    { id: "elysee_palace", name: "Palais de l'Élysée, Paris" },
+    { id: "rue_elysee", name: "Rue de l'Élysée, Paris" },
     { id: "galery", name: "Galeries Lafayette, Paris" },
     { id: "arc_triumf", name: "Arc de Triomphe, Paris" },
   ];
 
   spans.forEach((span) => {
-    document.getElementById(span.id).addEventListener("click", function () {
-      fetchPlaceInfo(span.name);
-    });
+    const element = document.getElementById(span.id);
+    if (element) {
+      element.addEventListener("click", function () {
+        fetchPlaceInfo(span.name);
+      });
+    }
   });
 
   // Функция для запроса информации о месте с использованием Mapbox API
