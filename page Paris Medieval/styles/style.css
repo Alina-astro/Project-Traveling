@@ -1,5 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+@font-face {
+  font-family: "Play";
+  src: url("../../assets/fonts/Play-Regular.ttf");
+}
 * {
   margin: 0;
   padding: 0;
@@ -10,22 +12,50 @@ body {
   background-color: #FFF3DB;
 }
 body .header__medieval {
-  margin: 0 auto;
+  margin: 0 auto 50px 0;
   width: 100%;
   height: 600px;
-  background-image: url("/assets/images/img_header_medieval.jpg");
+  background-image: url("../../assets/images/img_header_medieval.jpg");
   background-size: cover;
   background-position: center;
-  margin-bottom: 50px;
+}
+@media (max-width: 768px) {
+  body .header__medieval {
+    margin: 0 auto 10px 0;
+  }
+}
+@media (max-width: 375px) {
+  body .header__medieval {
+    margin: 0 auto 10px 0;
+  }
 }
 body .header__medieval .header__medieval__icon {
   padding: 40px;
+  left: 20px;
   max-width: 100%;
   height: 30%;
+  position: relative;
+}
+@media (max-width: 768px) {
+  body .header__medieval .header__medieval__icon {
+    padding: 30px;
+    bottom: 20px;
+    max-width: 50%;
+    height: 20%;
+  }
+}
+@media (max-width: 375px) {
+  body .header__medieval .header__medieval__icon {
+    padding: 40px;
+    left: 0;
+    right: 200px;
+    max-width: 50%;
+    height: 20%;
+  }
 }
 body .main__medieval {
   height: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   width: 50vw 50vh;
   padding: 60px;
 }
@@ -36,13 +66,20 @@ body .main__medieval .main__medieval__container {
   max-width: 100%;
   justify-items: center;
   position: relative;
-  margin-bottom: 100px;
 }
 @media (max-width: 768px) {
   body .main__medieval .main__medieval__container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+  }
+}
+@media (max-width: 375px) {
+  body .main__medieval .main__medieval__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 60vw 60vh;
   }
 }
 body .main__medieval .main__medieval__container .main__medieval__vector {
@@ -124,8 +161,8 @@ body .main__medieval .main__medieval__container #main__way9_medieval {
   grid-row: 9;
 }
 body .main__medieval .main__medieval__container .main__way_medieval {
-  cursor: pointer;
   font-size: 100%;
+  font-family: "Play";
   width: 370px;
   height: 370px;
   padding: 50px;
@@ -160,6 +197,22 @@ body .main__medieval .main__medieval__container .main__way_medieval {
     font-size: 15px;
   }
 }
+@media (max-width: 476px) {
+  body .main__medieval .main__medieval__container .main__way_medieval {
+    width: 250px;
+    height: 250px;
+    padding: 50px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 375px) {
+  body .main__medieval .main__medieval__container .main__way_medieval {
+    width: 210px;
+    height: 210px;
+    padding: 40px;
+    font-size: 8px;
+  }
+}
 body .main__medieval .main__medieval__container .main__way_medieval .main__way_medieval__text {
   padding: 10px;
   margin: 0;
@@ -173,12 +226,13 @@ body .main__medieval .main__medieval__container .main__way_medieval span {
   color: #192E82;
   font-family: Play;
   font-weight: bold;
+  cursor: pointer;
 }
 body .main__medieval .title__medieval {
   color: #4A5068;
   text-align: center;
   margin-bottom: 50px;
-  font-family: Play;
+  font-family: "Play";
   font-size: 60px;
 }
 @media (max-width: 1176px) {
@@ -191,11 +245,21 @@ body .main__medieval .title__medieval {
     font-size: 40px;
   }
 }
+@media (max-width: 476px) {
+  body .main__medieval .title__medieval {
+    font-size: 30px;
+  }
+}
+@media (max-width: 375px) {
+  body .main__medieval .title__medieval {
+    font-size: 15px;
+  }
+}
 body .main__medieval .main__medieval__desription {
   color: #4A5068;
   text-align: center;
   margin-bottom: 50px;
-  font-family: Play;
+  font-family: "Play";
   padding: 50px;
   font-size: 30px;
 }
@@ -207,23 +271,41 @@ body .main__medieval .main__medieval__desription {
 @media (max-width: 768px) {
   body .main__medieval .main__medieval__desription {
     font-size: 20px;
+    padding: 30px;
+  }
+}
+@media (max-width: 476px) {
+  body .main__medieval .main__medieval__desription {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+@media (max-width: 375px) {
+  body .main__medieval .main__medieval__desription {
+    font-size: 9px;
   }
 }
 body .main__medieval .main__wishes {
   text-align: center;
   color: #4A5068;
-  font-family: Play;
+  font-family: "Play";
   font-size: 50px;
-  padding-top: 100px;
+  padding-top: 200px;
 }
 @media (max-width: 1176px) {
   body .main__medieval .main__wishes {
     font-size: 40px;
+    padding-top: 100px;
   }
 }
 @media (max-width: 768px) {
   body .main__medieval .main__wishes {
     font-size: 30px;
+  }
+}
+@media (max-width: 476px) {
+  body .main__medieval .main__wishes {
+    padding-top: 100px;
   }
 }
 body .main__medieval .modal {
@@ -266,12 +348,18 @@ body .footer__medieval .mediveval__wrap {
   display: flex;
   justify-content: space-between;
   padding: 5vh 5vw;
-  font-family: Play;
+  font-family: "Play";
   color: #4A5068;
   font-size: 20px;
 }
 @media (max-width: 768px) {
   body .footer__medieval .mediveval__wrap {
     font-size: 10px;
+  }
+}
+@media (max-width: 375px) {
+  body .footer__medieval .mediveval__wrap {
+    padding: 2vh 2vw;
+    font-size: 8px;
   }
 }/*# sourceMappingURL=style.css.map */
