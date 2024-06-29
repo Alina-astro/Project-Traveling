@@ -2,6 +2,10 @@
   font-family: "Play";
   src: url("../../assets/fonts/Play-Regular.ttf");
 }
+@font-face {
+  font-family: "Bold";
+  src: url("../../assets/fonts/Play-Bold.ttf");
+}
 * {
   margin: 0;
   padding: 0;
@@ -224,7 +228,7 @@ body .main__medieval .main__medieval__container .main__way_medieval .main__way_m
 }
 body .main__medieval .main__medieval__container .main__way_medieval span {
   color: #192E82;
-  font-family: Play;
+  font-family: "Bold";
   font-weight: bold;
   cursor: pointer;
 }
