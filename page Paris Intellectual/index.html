@@ -10,46 +10,55 @@
     />
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <title>intellectual_paris</title>
+    <title>Интеллектуальный Париж</title>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3E3zXfUw9MB5-I8yz5Q5tYfh772BMqhw&callback=initMap"
+      async
+      defer
+    ></script>
   </head>
   <body>
     <header class="header">
-      <a href="../index.html"
-        ><div class="header__description">
-          <img src="../assets/icons/Logo_gray.png" /></div
-      ></a>
+      <a href="../index.html" class="header__description">
+        <img class="header__logo" src="../assets/icons/Logo_white.png" />
+      </a>
     </header>
     <main class="main">
       <h1 class="main__title">Интеллектуальный Париж</h1>
       <div class="main__wrapper">
-        <section class="main__point">
+        <section
+          class="main__point"
+          id="main__point_1"
+          data-coords="48.85337130103112, 2.343784325369162"
+          data-name="фонтан Сан-Мишель"
+          data-info="Знаменитый каменный фонтан 1860 года на оживленном перекрестке Латинского квартала – излюбленное место встреч."
+        >
           <div class="text">
             Наш маршрут по интеллектуальному Парижу будет проходить в Латинском
             квартале и начинается со станции метро
-            <a href="#"><span class="span">Saint-Michel Notre-Dame</span></a
-            >. Первой точкой маршрута будет
-            <a href="#"><span class="span">фонтан Сан-Мишель</span></a
-            >, популярное место для встреч. Далее мы пройдём по набережной до
+            <span class="span">Saint-Michel Notre-Dame</span>. Первой точкой
+            маршрута будет <span class="span">фонтан Сан-Мишель</span>,
+            популярное место для встреч. Далее мы пройдём по набережной до
             книжного магазина с огромной историей -
-            <a href="#"><span class="span">Шекспир и компания</span></a
-            >.
+            <span class="span">Шекспир и компания</span>.
           </div>
           <div class="main__point-location">
             <img src="../assets/icons/icon_location.svg" />
           </div>
         </section>
-        <section class="main__point">
+        <section
+          class="main__point"
+          id="main__point_2"
+          data-coords="48.851253560806, 2.33784359187403"
+          data-name="университет Сорбонна"
+          data-info="Университет, где преподают искусство, гуманитарные науки и языки. Филиалы расположены в разных округах Парижа."
+        >
           <div class="text">
             Пройдя в сторону ул. Эколь и свернув на ул. Сорбонна мы увидим
-            <a href="#"
-              ><span class="span"
-                >главный университет Парижа - Сорбонна</span
-              ></a
-            >, впервые основанный в 1257 году, а при нём
-            <a href="#"
-              ><span class="span"
-                >Церковь Сорбонны (Капелла Святой Урсулы Сорбонской)</span
-              ></a
+            <span class="span">главный университет Парижа - Сорбонна</span>,
+            впервые основанный в 1257 году, а при нём
+            <span class="span"
+              >Церковь Сорбонны (Капелла Святой Урсулы Сорбонской)</span
             >. Строения менялись в течение многих столетий. А в университете
             сохранилось множество средневековых традиций, принципов, ритуалов.
           </div>
@@ -57,70 +66,104 @@
             <img src="../assets/icons/icon_location.svg" />
           </div>
         </section>
-        <section class="main__point">
+        <section
+          class="main__point"
+          id="main__point_3"
+          data-coords="48.848071882172334, 2.3450438201737964"
+          data-name="Лицей Людовика Великого"
+          data-info="Лицей Людовика Великого. Старейшее учебное заведение Франции."
+        >
           <div class="text">
             За университетом находятся не менее значимые учебные заведения:
-            <a href="#"><span class="span">Лицей Людовика Великого</span></a
-            >, основанный в 1563 году орденом иезуитов, и
-            <a href="#"><span class="span">Коллеж де Франс</span></a
-            >, образованный в 1530 году.
+            <span class="span">Лицей Людовика Великого</span>, основанный в 1563
+            году орденом иезуитов, и <span class="span">Коллеж де Франс</span>,
+            образованный в 1530 году.
           </div>
           <div class="main__point-location">
             <img src="../assets/icons/icon_location.svg" />
           </div>
         </section>
-        <section class="main__point">
+        <section
+          class="main__point"
+          id="main__point_4"
+          data-coords="48.84642652415045, 2.346435254203662"
+          data-name="Пантеон"
+          data-info="Мавзолей XVIII века с колоннадой, усыпальница выдающихся граждан Франции."
+        >
           <div class="text">
             А рядом мы увидим площадь Пантеона, вокруг которой расположился сам
-            <a href="#"><span class="span">Пантеон</span></a> (а в прошлом
-            аббатство Св. Женевьевы, основанное в 502 году), один из корпусов
-            <a href="#"><span class="span">университета Сорбонна</span></a
-            >, и похожее на него здание, в котором разместилась
-            <a href="#"><span class="span">Мэрия 5го округа Парижа</span></a
-            >.
+            <span class="span">Пантеон</span> (а в прошлом аббатство Св.
+            Женевьевы, основанное в 502 году), один из корпусов
+            <span class="span">университета Сорбонна</span>, и похожее на него
+            здание, в котором разместилась
+            <span class="span">Мэрия 5го округа Парижа</span>.
           </div>
           <div class="main__point-location">
             <img src="../assets/icons/icon_location.svg" />
           </div>
         </section>
-        <section class="main__point">
+        <section
+          class="main__point"
+          id="main__point_5"
+          data-coords="48.8442922974389, 2.345862365854063"
+          data-name="Ирландский культурный центр"
+          data-info="Centre Culturel Irlandais."
+        >
           <div class="text">
             Гуляя по ул. Ломон мы можем увидеть
-            <a href="#"><span class="span">Ирландский культурный центр</span></a
-            >, с красивой архитектурой внутри. А совсем рядом находится
-            <a href="#"><span class="span">Музей Кюри</span></a
-            >, посвященный радиологическим исследованиям. В этом районе очень
-            много учебных заведений и мест досуга для студентов.
+            <span class="span">Ирландский культурный центр</span>, с красивой
+            архитектурой внутри. А совсем рядом находится
+            <span class="span">Музей Кюри</span>, посвященный радиологическим
+            исследованиям. В этом районе очень много учебных заведений и мест
+            досуга для студентов.
           </div>
           <div class="main__point-location">
             <img src="../assets/icons/icon_location.svg" />
           </div>
         </section>
-        <section class="main__point">
+        <section
+          class="main__point"
+          id="main__point_6"
+          data-coords="48.84719271758276, 2.3458690542036864"
+          data-name="Bibliothèque Sainte-Geneviève"
+          data-info="Элегантная библиотека XIX века с железными колоннами и арками, где проводятся бесплатные экскурсии с гидами."
+        >
           <div class="text">
             На площади стоит посетить
-            <a href="#"><span class="span">библиотеку Святой Женевьевы</span></a
-            >, элегантное здание XIX века с железными колоннами и арками, где
-            проводятся бесплатные экскурсии с гидами.
+            <span class="span">библиотеку Святой Женевьевы</span>, элегантное
+            здание XIX века с железными колоннами и арками, где проводятся
+            бесплатные экскурсии с гидами.
           </div>
           <div class="main__point-location">
             <img src="../assets/icons/icon_location.svg" />
           </div>
         </section>
-        <section class="main__point">
+        <section
+          class="main__point"
+          id="main__point_7"
+          data-coords="48.84674851877267, 2.336384540708512"
+          data-name="Люксембургский сад"
+          data-info="Регулярный парк XVII века со статуями на пьедесталах."
+        >
           <div class="text">
             Далее можно прогуляться по бульвару Сен-Мишель (с красивыми
             фасадами, магазинами и ресторанами), а затем остановиться в
-            <a href="#"><span class="span">Люксембургском саду</span></a
-            >. Он возник в 1611 г. вокруг будущего
-            <a href="#"><span class="span">Люксембургского дворца</span></a
-            >, построенного к 1631 г. для Марии Медичи. В этом саду
-            заканчивается наш маршрут. Приятного отдыха!
+            <span class="span">Люксембургском саду</span>. Он возник в 1611 г.
+            вокруг будущего <span class="span">Люксембургского дворца</span>,
+            построенного к 1631 г. для Марии Медичи. В этом саду заканчивается
+            наш маршрут. Приятного отдыха!
           </div>
           <div class="main__point-location">
             <img src="../assets/icons/icon_location.svg" />
           </div>
         </section>
+      </div>
+      <div id="popUp" class="popUp">
+        <div class="popUp-content">
+          <span class="close">&times;</span>
+          <div id="map"></div>
+          <div id="place-info"></div>
+        </div>
       </div>
     </main>
     <footer>

@@ -1,20 +1,31 @@
+@font-face {
+  font-family: "Play";
+  src: url("../../assets/fonts/Play-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
 .header {
-  min-width: 280px;
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../../assets/images/img_header_intellectual.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.header__img {
+  margin: 0 auto;
   width: 100%;
-  position: relative;
+  height: 600px;
+  background-image: url("../../assets/images/img_header_intellectual.jpg");
+  background-size: cover;
+  background-position: center;
 }
-.header__description {
-  position: absolute;
-  width: 15%;
-  top: 5%;
-  left: 5%;
+.header__logo {
+  padding: 2%;
+  max-width: 100%;
+  height: 30%;
 }
 main {
   background-color: rgb(220, 196, 176);
@@ -31,9 +42,11 @@ main {
   color: rgb(74, 80, 104);
   text-align: center;
   font-family: "Play", sans-serif;
-  margin-top: 2vh;
+  margin-top: 0;
+  padding-top: 5%;
 }
 .main__point {
+  cursor: pointer;
   width: 380px;
   height: 380px;
   border-radius: 50%;
@@ -60,7 +73,6 @@ main {
   font-weight: bold;
   color: rgb(25, 46, 130);
 }
-
 body footer {
   font-family: "Play", sans-serif;
   color: white;
