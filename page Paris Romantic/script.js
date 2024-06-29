@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     { id: "arc_triumf", name: "Arc de Triomphe, Paris" },
   ];
 
-  spans.forEach((span) => {
+  spans.forEach(span => {
     const element = document.getElementById(span.id);
     if (element) {
       element.addEventListener("click", function () {
@@ -37,19 +37,19 @@ document.addEventListener("DOMContentLoaded", function () {
         placeName
       )}.json?access_token=pk.eyJ1IjoiYnVraHRhcmV2aWNoLWRldmVsb3BlciIsImEiOiJjbHh5d2NjZmkwNXFzMmpxdTlnaGx4azZqIn0.6Ud1JuiPQM-M1_IzpoLiuQ`
     )
-      .then((response) => {
+      .then(response => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
         return response.json();
       })
-      .then((data) => {
+      .then(data => {
         const placeInfo = data.features[0];
         const placeName = placeInfo.place_name;
         const coordinates = placeInfo.geometry.coordinates;
         showPopup(placeName, coordinates);
       })
-      .catch((error) => console.error("Error fetching data:", error));
+      .catch(error => console.error("Error fetching data:", error));
   }
 
   // Функция для отображения popup
