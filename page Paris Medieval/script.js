@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
             currentMarker.setMap(null);
         }
 
-        const zoomLevel = 15; // Зум для места, на которое пользователь нажал
+        const zoomLevel = 15; 
 
         const marker = new google.maps.Marker({
             position: { lat: parseFloat(coords[0]), lng: parseFloat(coords[1]) },
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         currentMarker = marker;
 
-        // Установка центра карты и зума на место, на которое пользователь нажал
+        
         map.setCenter({ lat: parseFloat(coords[0]), lng: parseFloat(coords[1]) });
         map.setZoom(zoomLevel);
 
@@ -58,8 +58,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const closeButton = document.getElementsByClassName('close')[0];
         closeButton.onclick = function() {
             modal.style.display = 'none';
-            map.setZoom(13); // Возвращаем исходный зум
-            map.setCenter({ lat: 48.8566, lng: 2.3522 }); // Возвращаем исходный центр карты
+            map.setZoom(13); 
+            map.setCenter({ lat: 48.8566, lng: 2.3522 }); 
             if (currentMarker) {
                 currentMarker.setMap(null);
                 currentMarker = null;
