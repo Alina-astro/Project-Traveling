@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../assets/icons/icon_paris.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Интеллектуальный Париж</title>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=73a598b0-bccd-4b26-969b-dbaf5fdc45e0&lang=ru_RU&load=Geolink"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="../index.html" class="header__description">
+        <img class="header__logo" src="../assets/icons/Logo_white.png" />
+      </a>
+    </header>
+    <main class="main">
+      <h1 class="main__title">Интеллектуальный Париж</h1>
+      <div class="main__wrapper">
+        <section
+          class="main__point"
+          id="main__point_1"
+          data-coords="48.85337130103112, 2.343784325369162"
+          data-name="фонтан Сан-Мишель"
+          data-info="Знаменитый каменный фонтан 1860 года на оживленном перекрестке Латинского квартала – излюбленное место встреч."
+        >
+          <div class="main__point_text">
+            Наш маршрут по интеллектуальному Парижу будет проходить в Латинском
+            квартале и начинается со станции метро
+            <span class="ymaps-geolink">Saint-Michel Notre-Dame</span>. Первой
+            точкой маршрута будет фонтан
+            <span
+              class="ymaps-geolink"
+              data-type="biz"
+              data-bounds="[[48.83933789071716,2.218186476613897],[48.99681942521128,2.7269907979029435]]"
+              >Сен-Мишель, Париж</span
+            >, популярное место для встреч. Далее мы пройдём по набережной до
+            книжного магазина с огромной историей -
+            <span class="ymaps-geolink" data-type="biz"
+              >Shakespeare and Company</span
+            >.
+          </div>
+          <div class="main__point-location">
+            <img src="../assets/icons/icon_location.svg" />
+          </div>
+        </section>
+        <section
+          class="main__point"
+          id="main__point_2"
+          data-coords="48.851253560806, 2.33784359187403"
+          data-name="университет Сорбонна"
+          data-info="Университет, где преподают искусство, гуманитарные науки и языки. Филиалы расположены в разных округах Парижа."
+        >
+          <div class="main__point_text">
+            Пройдя в сторону ул. Эколь и свернув на ул. Сорбонна мы увидим
+            главный университет Парижа -
+            <span class="ymaps-geolink">Сорбонна</span>, впервые основанный в
+            1257 году, а при нём капеллу
+            <span
+              class="ymaps-geolink"
+              data-bounds="[[48.83933789071716,2.218186476613897],[48.99681942521128,2.7269907979029435]]"
+              >Chapel of the Sorbonne</span
+            >. Строения менялись в течение многих столетий. А в университете
+            сохранилось множество средневековых традиций, принципов, ритуалов.
+          </div>
+          <div class="main__point-location">
+            <img src="../assets/icons/icon_location.svg" />
+          </div>
+        </section>
+
+        <section
+          class="main__point"
+          id="main__point_3"
+          data-coords="48.848071882172334, 2.3450438201737964"
+          data-name="Лицей Людовика Великого"
+          data-info="Лицей Людовика Великого. Старейшее учебное заведение Франции."
+        >
+          <div class="main__point_text">
+            За университетом находятся не менее значимые учебные заведения:
+            <span
+              class="ymaps-geolink"
+              data-bounds="[[48.83933789071716,2.218186476613897],[48.99681942521128,2.7269907979029435]]"
+              >Лицей Людовика Великого</span
+            >, основанный в 1563 году орденом иезуитов, и
+            <span
+              class="ymaps-geolink"
+              data-type="biz"
+              data-bounds="[[48.91814108081415,2.4725886372584327]]"
+              >Коллеж де Франс</span
+            >, образованный в 1530 году.
+          </div>
+          <div class="main__point-location">
+            <img src="../assets/icons/icon_location.svg" />
+          </div>
+        </section>
+        <section
+          class="main__point"
+          id="main__point_4"
+          data-coords="48.84642652415045, 2.346435254203662"
+          data-name="Пантеон"
+          data-info="Мавзолей XVIII века с колоннадой, усыпальница выдающихся граждан Франции."
+        >
+          <div class="main__point_text">
+            А рядом мы увидим площадь Пантеона, вокруг которой расположился сам
+            <span
+              class="ymaps-geolink"
+              data-type="biz"
+              data-bounds="[[48.83933789071716,2.218186476613897],[48.99681942521128,2.7269907979029435]]"
+              >Пантеон</span
+            >
+            (а в прошлом аббатство Св. Женевьевы, основанное в 502 году), один
+            из корпусов университета Сорбонна, и похожее на него здание, в
+            котором разместилась
+            <span
+              class="ymaps-geolink"
+              data-type="biz"
+              data-bounds="[[48.83933789071716,2.218186476613897],[48.99681942521128,2.7269907979029435]]"
+              >Мэрия 5-го округа Парижа</span
+            >.
+          </div>
+          <div class="main__point-location">
+            <img src="../assets/icons/icon_location.svg" />
+          </div>
+        </section>
+        <section
+          class="main__point"
+          id="main__point_5"
+          data-coords="48.8442922974389, 2.345862365854063"
+          data-name="Ирландский культурный центр"
+          data-info="Centre Culturel Irlandais."
+        >
+          <div class="main__point_text">
+            Гуляя по ул. Ломон мы можем увидеть
+            <span
+              class="ymaps-geolink"
+              data-type="biz"
+              data-bounds="[[48.83933789071716,2.218186476613897],[48.99681942521128,2.7269907979029435]]"
+              >Ирландский культурный центр</span
+            >, с красивой архитектурой внутри. А совсем рядом находится
+            <span
+              class="ymaps-geolink"
+              data-type="biz"
+              data-bounds="[[48.83933789071716,2.218186476613897],[48.99681942521128,2.7269907979029435]]"
+              >Musée Curie</span
+            >, посвященный радиологическим исследованиям. В этом районе очень
+            много учебных заведений и мест досуга для студентов.
+          </div>
+          <div class="main__point-location">
+            <img src="../assets/icons/icon_location.svg" />
+          </div>
+        </section>
+        <section
+          class="main__point"
+          id="main__point_6"
+          data-coords="48.84719271758276, 2.3458690542036864"
+          data-name="Bibliothèque Sainte-Geneviève"
+          data-info="Элегантная библиотека XIX века с железными колоннами и арками, где проводятся бесплатные экскурсии с гидами."
+        >
+          <div class="main__point_text">
+            На площади стоит посетить
+            <span
+              class="ymaps-geolink"
+              data-bounds="[[48.83933789071716,2.218186476613897],[48.99681942521128,2.7269907979029435]]"
+              >библиотеку Святой Женевьевы</span
+            >, элегантное здание XIX века с железными колоннами и арками, где
+            проводятся бесплатные экскурсии с гидами.
+          </div>
+          <div class="main__point-location">
+            <img src="../assets/icons/icon_location.svg" />
+          </div>
+        </section>
+
+        <section
+          class="main__point"
+          id="main__point_7"
+          data-coords="48.84674851877267, 2.336384540708512"
+          data-name="Люксембургский сад"
+          data-info="Регулярный парк XVII века со статуями на пьедесталах."
+        >
+          <div class="main__point_text">
+            Далее можно прогуляться по бульвару Сен-Мишель (с красивыми
+            фасадами, магазинами и ресторанами), а затем остановиться в
+            <span
+              class="ymaps-geolink"
+              data-bounds="[[48.83933789071716,2.218186476613897],[48.99681942521128,2.7269907979029435]]"
+              >Люксембургском саду</span
+            >. Он возник в 1611 г. вокруг будущего
+            <span
+              class="ymaps-geolink"
+              data-bounds="[[48.83933789071716,2.218186476613897],[48.99681942521128,2.7269907979029435]]"
+              >Люксембургского дворца</span
+            >, построенного к 1631 г. для Марии Медичи. В этом саду
+            заканчивается наш маршрут. Приятного отдыха!
+          </div>
+          <div class="main__point-location">
+            <img src="../assets/icons/icon_location.svg" />
+          </div>
+        </section>
+      </div>
+      <div id="popUp" class="popUp">
+        <div class="popUp-content">
+          <span class="close">&times;</span>
+          <div id="map"></div>
+          <div id="place-info"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrap">
+        <div class="footer__email">
+          <a href="#">guide-parisien@gmail.com</a> - по всем вопросам и
+          предложениям
+        </div>
+        <div class="footer__copyright">Guide Parisien © 2024</div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
