@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Play";
   src: url("../../assets/fonts/Play-Regular.ttf");
@@ -16,39 +15,34 @@
 body {
   background-color: rgb(255, 209, 177);
   font-family: "Play", sans-serif;
-  font-weight: lighter;
+  color: #4a5068;
 }
 body header {
   margin: 0 auto;
+  margin-bottom: 50px;
   width: 100%;
   height: 800px;
   background-image: url("../../assets/images/img_header_romantic.jpg");
   background-size: cover;
   background-position: center;
-  margin-bottom: 50px;
+  padding: 30px 12vw;
 }
-body header .header_romantic_logo {
-  max-width: 20%;
-  padding: 15px;
-  margin-left: 12%;
+body header .header__logo {
+  width: 15vw;
+}
+body header .header__logo a .header_romantic_logo {
+  width: 100%;
 }
 body main h1 {
-  color: #4a5068;
   text-align: center;
-  margin-bottom: 50px;
 }
-body main .description_romantic {
-  color: #4a5068;
-  text-align: center;
+body .description_romantic {
+  text-align: justify;
   line-height: 130%;
-  margin-bottom: 50px;
-  margin-left: 9%;
-  margin-right: 9%;
-  font-family: "Play", sans-serif;
-  padding: 50px;
+  padding: 50px 9%;
   font-size: 150%;
 }
-body main .grid_container_romantic {
+body .grid_container_romantic {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 280px;
@@ -61,47 +55,55 @@ body main .grid_container_romantic {
   background-size: 100% 90%;
   background-position: center;
 }
-body main .grid_container_romantic #circle_romantic1 {
+@media screen and (max-width: 1024px) {
+  body .grid_container_romantic {
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+body .grid_container_romantic #circle_romantic1 {
   grid-column: 1/2;
   grid-row: 1;
 }
-body main .grid_container_romantic #circle_romantic2 {
+body .grid_container_romantic #circle_romantic2 {
   grid-column: 2/3;
   grid-row: 2;
 }
-body main .grid_container_romantic #circle_romantic3 {
+body .grid_container_romantic #circle_romantic3 {
   grid-column: 1/2;
   grid-row: 3;
 }
-body main .grid_container_romantic #circle_romantic4 {
+body .grid_container_romantic #circle_romantic4 {
   grid-column: 2/3;
   grid-row: 4;
 }
-body main .grid_container_romantic #circle_romantic5 {
+body .grid_container_romantic #circle_romantic5 {
   grid-column: 1/2;
   grid-row: 5;
 }
-body main .grid_container_romantic #circle_romantic6 {
+body .grid_container_romantic #circle_romantic6 {
   grid-column: 2/3;
   grid-row: 6;
 }
-body main .grid_container_romantic #circle_romantic7 {
+body .grid_container_romantic #circle_romantic7 {
   grid-column: 1/2;
   grid-row: 7;
 }
-body main .grid_container_romantic #circle_romantic8 {
+body .grid_container_romantic #circle_romantic8 {
   grid-column: 2/3;
   grid-row: 8;
 }
-body main .grid_container_romantic #circle_romantic9 {
+body .grid_container_romantic #circle_romantic9 {
   grid-column: 1/2;
   grid-row: 9;
 }
-body main .grid_container_romantic #circle_romantic10 {
+body .grid_container_romantic #circle_romantic10 {
   grid-column: 2/3;
   grid-row: 10;
 }
-body main .grid_container_romantic .circle_romantic {
+body .grid_container_romantic .circle_romantic {
   width: 450px;
   height: 450px;
   padding: 50px;
@@ -111,7 +113,6 @@ body main .grid_container_romantic .circle_romantic {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  color: #4a5068;
   text-align: center;
   flex-direction: column;
   margin: 0 auto;
@@ -120,34 +121,33 @@ body main .grid_container_romantic .circle_romantic {
   background-color: rgb(255, 209, 177);
   z-index: 1;
 }
-body main .grid_container_romantic .circle_romantic .content_romantic {
+body .grid_container_romantic .circle_romantic .content_romantic {
   padding: 10px;
   margin: 0;
-  font-family: "Play", sans-serif;
 }
-body main .grid_container_romantic .circle_romantic .content_romantic .api_romantic {
+body .grid_container_romantic .circle_romantic .content_romantic .api_romantic {
   cursor: pointer;
   color: #192e82;
   font-family: "Bold", sans-serif;
   text-decoration: underline;
   transition: transform 0.3s ease, color 0.3s ease;
 }
-body main .grid_container_romantic .circle_romantic .content_romantic .api_romantic:hover {
+body .grid_container_romantic .circle_romantic .content_romantic .api_romantic:hover {
   color: rgb(1, 1, 71);
   transform: scale(1.2);
   cursor: pointer;
 }
-body main .grid_container_romantic .circle_romantic .romantic_icon {
+body .grid_container_romantic .circle_romantic .romantic_icon {
   max-width: 20%;
   max-height: 15%;
 }
-body main #map {
+body #map {
   position: absolute;
   top: 0;
   bottom: 0;
   width: 100%;
 }
-body main .popup {
+body .popup {
   display: none;
   position: fixed;
   z-index: 1;
@@ -159,7 +159,7 @@ body main .popup {
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
 }
-body main .popup-content {
+body .popup-content {
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
@@ -167,19 +167,21 @@ body main .popup-content {
   border-radius: 20px;
   width: 80%;
 }
-body main .close {
+body .close {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
-body main .close:hover,
-body main .close:focus {
+body .close:hover,
+body .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
-body footer {
+
+footer {
+  padding: 30px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 150px;
@@ -187,72 +189,29 @@ body footer {
   width: 100%;
   justify-items: center;
   position: relative;
-  color: #4a5068;
   text-align: center;
   margin-top: 200px;
 }
-body footer h2 {
-  color: #4a5068;
+@media screen and (max-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+footer h2 {
   text-align: center;
   margin-bottom: 50px;
 }
-body footer .footer_romantic {
+footer .footer_romantic {
   grid-column: 1/3;
   grid-row: 1;
 }
-body footer .email_romantic {
+footer .email_romantic {
   grid-column: 1/2;
   grid-row: 2;
 }
-body footer .year_romantic {
+footer .year_romantic {
   grid-column: 2/3;
   grid-row: 2;
-}
-
-@media screen and (max-width: 1024px) {
-  /* Медиа-запрос для удаления вектора на маленьких экранах */
-  .grid_container_romantic {
-    grid-template-columns: repeat(1, 1fr);
-    background-image: none;
-  }
-  .grid_container_romantic #circle_romantic1 {
-    grid-column: 1/2;
-    grid-row: 1;
-  }
-  .grid_container_romantic #circle_romantic2 {
-    grid-column: 1/2;
-    grid-row: 2;
-  }
-  .grid_container_romantic #circle_romantic3 {
-    grid-column: 1/2;
-    grid-row: 3;
-  }
-  .grid_container_romantic #circle_romantic4 {
-    grid-column: 1/2;
-    grid-row: 4;
-  }
-  .grid_container_romantic #circle_romantic5 {
-    grid-column: 1/2;
-    grid-row: 5;
-  }
-  .grid_container_romantic #circle_romantic6 {
-    grid-column: 1/2;
-    grid-row: 6;
-  }
-  .grid_container_romantic #circle_romantic7 {
-    grid-column: 1/3;
-    grid-row: 7;
-  }
-  .grid_container_romantic #circle_romantic8 {
-    grid-column: 1/2;
-    grid-row: 8;
-  }
-  .grid_container_romantic #circle_romantic9 {
-    grid-column: 1/2;
-    grid-row: 9;
-  }
-  .grid_container_romantic #circle_romantic10 {
-    grid-column: 1/2;
-    grid-row: 10;
-  }
 }/*# sourceMappingURL=style.css.map */
