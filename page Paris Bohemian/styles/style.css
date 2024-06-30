@@ -1,75 +1,220 @@
-/*# sourceMappingURL=style.css.map */
-
-/*# sourceMappingURL=style.css.map */
-
-.header__bohemian {
-    margin: 0 auto;
-    max-width: 1920px;
-    min-width: 280px;
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../../assets/images/img_header_bohemian.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-}
-
-.logo__white {
-    max-width: 10%;
+@font-face {
+  font-family: "Play";
+  src: url("../../assets/fonts/Play-Regular.ttf");
 }
 
 body {
-    background-color: #E4CBDD;
+  margin: 0 auto;
+  background-color: #E4CBDD;
+}
+
+.header__bohemian {
+
+  max-width: 1920px;
+  height: 600px;
+  background-image: url(../../assets/images/img_header_bohemian.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo__white {
+  max-width: 15%;
+  margin: 40px;
+}
+
+.title__bohemian,
+.goodbye__bohemian {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-family: "Play";
+  font-size: 60px;
+  font-weight: 400;
+  color: #4A5068;
 }
 
 .text__bohemian {
-    margin: 20px 50px 30px;
-}
-
-.title__bohemian {
-    text-align: center;
-    margin-top: 50px;
+  margin: 20px 50px 20px;
+  font-family: "Play";
+  font-size: 30px;
+  color: #4A5068;
+  text-align: center;
 }
 
 .guide__bohemian__container {
-    background-image: url(../../assets/images/medieval/Vector\ 1\(1\).png);
-    background-size: 95% 85%;
-    background-position: 40%;
-    background-repeat: no-repeat;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 110px;
+  background-image: url(../../assets/images/medieval/Vector\ 1\(1\).png);
+  background-size: 95% 85%;
+  background-position: 40%;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 110px;
 }
 
 .guide__bohemian-location {
-    width: 400px;
-    height: 400px;
-    background-color: #E9D6E4;
-    border: 1px solid #dfd3db;
-    border-radius: 50%;
-    position: relative;
-    margin: 10vh auto 0;
-    box-shadow: 5px 5px 4px 3px #bb9bb1;
+  width: 500px;
+  height: 500px;
+  background-color: #E9D6E4;
+  border: 1px solid #dfd3db;
+  border-radius: 50%;
+  position: relative;
+  margin: 8vh auto 0;
+  box-shadow: 5px 5px 4px 3px #bb9bb1;
 }
 
 .guide__bohemian-text {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 1rem;
+  font-family: "Play";
+  color: #4A5068;
+  width: 390px;
+  height: 300px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 24px;
 }
 
-.goodbye__bohemian {
-    text-align: center;
-    font-size: 25px;
+.icon__location {
+  width: 21%;
 }
 
 .footer__bohemian {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 30px 30px;
+}
+
+.e-mail__bohemian {
+  font-family: "Play";
+  font-size: 30px;
+  color: #4A5068;
+}
+
+.rights__bohemian {
+  font-family: "Play";
+  font-size: 20px;
+  color: #4A5068;
+  align-self: center;
+}
+
+@media (max-width: 1245px) {
+  .guide__bohemian__container {
+    grid-gap: 80px;
+  }
+
+  .title__bohemian,
+  .goodbye__bohemian {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 40px;
+  }
+
+  .guide__bohemian-location {
+    width: 400px;
+    height: 400px;
+  }
+
+  .guide__bohemian-text {
+    width: 280px;
+    height: 200px;
+    top: 40%;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 950px) {
+  .guide__bohemian-location {
+    width: 320px;
+    height: 320px;
+  }
+
+  .title__bohemian,
+  .goodbye__bohemian {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 30px;
+  }
+
+  .text__bohemian {
+    margin: 20px 50px 20px;
+    font-size: 20px;
+  }
+
+  .guide__bohemian-text {
+    width: 245px;
+    height: 220px;
+    top: 50%;
+    font-size: 15px;
+  }
+
+  .guide__bohemian__container {
+    grid-gap: 50px;
+  }
+
+  .e-mail__bohemian {
+    font-size: 25px;
+  }
+
+  .rights__bohemian {
+    font-size: 15px;
+  }
+
+}
+
+@media (max-width: 730px) {
+  .guide__bohemian__container {
+    background-image: none;
     display: flex;
-    justify-content: space-between;
-    margin: 30px 30px;
+    flex-direction: column;
+  }
+
+  .guide__bohemian-location {
+    margin: 1vh auto 0;
+  }
+
+  .footer__bohemian {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .e-mail__bohemian {
+    padding-bottom: 15px;
+    font-size: 11px;
+  }
+
+  .rights__bohemian {
+    font-size: 11px;
+  }
+}
+
+
+@media (max-width: 430px) {
+  .guide__bohemian__container {
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .guide__bohemian-location {
+    margin: 1vh auto 0;
+  }
+
+  .footer__bohemian {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .e-mail__bohemian {
+    padding-bottom: 15px;
+    font-size: 11px;
+  }
+
+  .rights__bohemian {
+    font-size: 11px;
+  }
 }
