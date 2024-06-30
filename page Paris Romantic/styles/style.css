@@ -141,12 +141,6 @@ body .grid_container_romantic .circle_romantic .romantic_icon {
   max-width: 20%;
   max-height: 15%;
 }
-body #map {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-}
 body .popup {
   display: none;
   position: fixed;
