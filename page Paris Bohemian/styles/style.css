@@ -10,8 +10,8 @@ body {
 
 .header__bohemian {
   max-width: 1920px;
-  height: 600px;
-  background-image: url(../../assets/images/img_header_bohemian.png);
+  height: 750px;
+  background-image: url(../../assets/images/img_header_bohemian.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
