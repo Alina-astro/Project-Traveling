@@ -1,4 +1,27 @@
+@font-face {
+  font-family: "Play";
+  src: url("../../assets/fonts/Play-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.ymaps-geolink {
+  text-decoration: none;
+  font-weight: bolder;
+  color: rgb(25, 46, 130);
+}
+
 .header {
+  margin: 0 auto;
   width: 100%;
   height: 600px;
   background-image: url("../../assets/images/img_header_intellectual.jpg");
@@ -9,10 +32,78 @@
   padding: 2%;
   max-width: 100%;
   height: 30%;
+  @media all and ((min-width: 280px) and (max-width: 1000px)) {
+    height: 15%;
+  }
 }
-.header__img {
-  background-image: url("/assets/images/img_header_intellectual.jpg");
+.main {
+  background-color: rgb(220, 196, 176);
+  background-image: url("../../assets/images/vector_1.svg");
+  background-repeat: no-repeat;
   background-size: cover;
+  width: 100vw;
+  @media all and ((min-width: 280px) and (max-width: 1000px)) {
+    background-image: none;
+  }
+}
+.main__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#main__point_1 {
+  align-self: start;
+  margin-top: -5%;
+  @media all and ((min-width: 280px) and (max-width: 1000px)) {
+    align-self: center;
+    margin-top: 0;
+  }
+}
+#main__point_2 {
+  align-self: end;
+  margin-top: -12%;
+
+  @media all and ((min-width: 280px) and (max-width: 1000px)) {
+    align-self: center;
+    margin-top: 0;
+  }
+}
+#main__point_3 {
+  align-self: start;
+  @media all and ((min-width: 280px) and (max-width: 1000px)) {
+    align-self: center;
+  }
+}
+#main__point_4 {
+  align-self: end;
+  margin-top: 15%;
+  @media all and ((min-width: 280px) and (max-width: 1000px)) {
+    align-self: center;
+    margin-top: 0;
+  }
+}
+#main__point_5 {
+  align-self: start;
+  margin-top: 8%;
+  @media all and ((min-width: 280px) and (max-width: 1000px)) {
+    align-self: center;
+    margin-top: 0;
+  }
+}
+#main__point_6 {
+  align-self: end;
+  margin-top: 25%;
+
+  @media all and ((min-width: 280px) and (max-width: 1000px)) {
+    align-self: center;
+    margin-top: 0;
+  }
+}
+#main__point_7 {
+  align-self: start;
+  @media all and ((min-width: 280px) and (max-width: 1000px)) {
+    align-self: center;
+  }
 }
 .main__title {
   color: rgb(74, 80, 104);
@@ -28,23 +119,86 @@
   border-radius: 50%;
   background: rgb(245, 220, 199);
   position: relative;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.1),
+    0px 4px 8px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  padding: 20px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
-.header__description {
+.main__point_text {
   position: absolute;
-  top: 5%;
-  left: 5%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(74, 80, 104);
+  font-family: "Play", sans-serif;
 }
-body footer .footer-wrap {
+.span {
+  font-weight: bolder;
+  color: rgb(25, 46, 130);
+}
+.popUp {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.popUp .popUp-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.popUp .popUp-content .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.popUp .popUp-content .close:hover,
+.popUp .popUp-content .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.popUp .popUp-content #map {
+  height: 400px;
+  width: 100%;
+}
+.popUp .popUp-content #place-info {
+  margin-top: 10px;
+}
+.footer {
+  font-family: "Play", sans-serif;
+  color: white;
+  background-color: rgb(220, 196, 176);
+}
+.footer-wrap {
   padding: 5vh 5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body footer .footer-wrap .footer__email {
+.footer-wrap .footer__email {
   font-size: 30px;
+  @media all and ((min-width: 280px) and (max-width: 1000px)) {
+    font-size: 1rem;
+  }
 }
-body footer .footer-wrap .footer__copyright {
+.footer-wrap .footer__copyright {
   font-size: 20px;
+  @media all and ((min-width: 280px) and (max-width: 1000px)) {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
