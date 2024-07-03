@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Font-slogan";
-  src: url(../../../assets/fonts/Volkhov-Regular.ttf);
+  src: url(../fonts/Volkhov-Regular.ttf);
 }
 @font-face {
   font-family: "Font-main";
-  src: url(../../../assets/fonts/Play-Regular.ttf);
+  src: url(../fonts/Play-Regular.ttf);
 }
 @font-face {
   font-family: "Font-bold";
-  src: url(../../../assets/fonts/Play-Bold.ttf);
+  src: url(../fonts/Play-Bold.ttf);
 }
 
 * {
@@ -25,7 +25,7 @@ body {
     width: 100vw;
     aspect-ratio: 2/1.2;
     padding: 20px;
-    background-image: url(../../../assets/images/main_cards/img_header_main.jpg);
+    background-image: url(../images/main_cards/img_header_main.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
