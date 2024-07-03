@@ -90,13 +90,15 @@ body {
       flex-direction: column;
       gap: 80px;
       @media all and (min-width: 280px) and (max-width: 1440px) {
-        padding: 30px 5%;
         gap: 40px;
+      }
+      @media all and (min-width: 280px) and (max-width: 1100px) {
+        padding: 30px 5%;
       }
       h2 {
         font-size: 50px;
         text-align: center;
-        @media all and (min-width: 501px) and (max-width: 1023px) {
+        @media all and (min-width: 501px) and (max-width: 1440px) {
           font-size: 30px;
         }
         @media all and (min-width: 280px) and (max-width: 500px) {
@@ -107,6 +109,9 @@ body {
         font-size: 26px;
         line-height: 138%;
         text-align: justify;
+        @media all and (min-width: 701px) and (max-width: 1440px) {
+          font-size: 20px;
+        }
         @media all and (min-width: 280px) and (max-width: 700px) {
           font-size: 16px;
           line-height: 110%;
