@@ -102,15 +102,19 @@ body main .container {
 }
 @media all and (min-width: 280px) and (max-width: 1440px) {
   body main .container {
-    padding: 30px 5%;
     gap: 40px;
+  }
+}
+@media all and (min-width: 280px) and (max-width: 1100px) {
+  body main .container {
+    padding: 30px 5%;
   }
 }
 body main .container h2 {
   font-size: 50px;
   text-align: center;
 }
-@media all and (min-width: 501px) and (max-width: 1023px) {
+@media all and (min-width: 501px) and (max-width: 1440px) {
   body main .container h2 {
     font-size: 30px;
   }
@@ -124,6 +128,11 @@ body main .container .container__text {
   font-size: 26px;
   line-height: 138%;
   text-align: justify;
+}
+@media all and (min-width: 701px) and (max-width: 1440px) {
+  body main .container .container__text {
+    font-size: 20px;
+  }
 }
 @media all and (min-width: 280px) and (max-width: 700px) {
   body main .container .container__text {
